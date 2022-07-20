@@ -1,0 +1,23 @@
+# A total sum of all prizes claimed on this network
+type Aggregate @entity {
+  id: String!
+  totalClaimed: BigInt!
+}
+
+type Account @entity {
+  id: ID! # account address
+  totalClaimed: BigInt! # sum of amount claimed on this network
+  draws: [AccountDraw!]! @derivedFrom(field: "account")
+}
+
+type Draw @entity {
+  id: String! # drawId
+  totalClaimed: BigInt! # sum of amount claimed for this draw
+  accounts: [AccountDraw!]! @derivedFrom(field: "draw")
+}
+
+type AccountDraw @entity {
+  id: String! # Set to `account.id.concat(draw.id)`
+  account: Account!
+  draw: Draw!
+}

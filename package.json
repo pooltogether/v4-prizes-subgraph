@@ -1,0 +1,29 @@
+{
+  "name": "v4-prizes-subgraph",
+  "license": "GPL-3.0",
+  "version": "1.0.0",
+  "scripts": {
+    "reinstall": "rm -rf node_modules/ && yarn",
+    "clean": "rm -rf build/ generated/",
+    "format": "prettier --config .prettierrc --write \"**/*.{ts,js}\"",
+    "format:file": "prettier --config .prettierrc --write",
+    "prepare:mainnet": "mustache networks/mainnet.json subgraph.template.yaml subgraph.mainnet.yaml",
+    "gen:mainnet": "graph codegen subgraph.mainnet.yaml",
+    "deploy:mainnet": "graph deploy --product hosted-service --node https://api.thegraph.com/deploy/ --ipfs https://api.thegraph.com/ipfs/ pooltogether/mainnet-v4-prizes-claimed subgraph.mainnet.yaml",
+    "all-mainnet": "yarn clean && yarn prepare:mainnet && yarn gen:mainnet && yarn deploy:mainnet",
+    "build:mainnet": "graph build subgraph.mainnet.yaml",
+    "auth": "graph auth https://api.thegraph.com/deploy/",
+    "tag-release": "PACKAGE_VERSION=$(./scripts/package-version.sh) && git tag -ae v$PACKAGE_VERSION && git push --tags",
+    "test": "yarn clean && yarn prepare:rinkeby && yarn gen:rinkeby && cp subgraph.rinkeby.yaml subgraph.yaml && graph test"
+  },
+  "dependencies": {
+    "@graphprotocol/graph-cli": "0.29.0",
+    "@graphprotocol/graph-ts": "0.26.0",
+    "@pooltogether/v4-core": "^1.2.0",
+    "matchstick-as": "0.4.2",
+    "mustache": "4.2.0"
+  },
+  "devDependencies": {
+    "prettier": "2.6.0"
+  }
+}
