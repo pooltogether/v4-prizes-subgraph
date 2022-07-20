@@ -1,0 +1,7 @@
+{
+  "network": "optimism",
+  "PrizeDistributor": {
+    "address": "0x722e9BFC008358aC2d445a8d892cF7b62B550F3F",
+    "startBlock": "14043000"
+  }
+}

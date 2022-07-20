@@ -1,0 +1,7 @@
+{
+  "network": "avalanche",
+  "PrizeDistributor": {
+    "address": "0x83332F908f403ce795D90f677cE3f382FE73f3D1",
+    "startBlock": "8500000"
+  }
+}

@@ -1,0 +1,7 @@
+{
+  "network": "matic",
+  "PrizeDistributor": {
+    "address": "0x8141BcFBcEE654c5dE17C4e2B2AF26B67f9B9056",
+    "startBlock": "20670000"
+  }
+}
