@@ -17,7 +17,8 @@ type Draw @entity {
 }
 
 type AccountDraw @entity {
-  id: String! # Set to `account.id.concat(draw.id)`
+  id: String! # `account.id + draw.id`
   account: Account!
   draw: Draw!
+  claimed: BigInt! # amount claimed by user for this single draw
 }

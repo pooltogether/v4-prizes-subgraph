@@ -16,7 +16,7 @@ export function handleClaimedDraw(event: ClaimedDraw): void {
   const aggregate = loadOrCreateAggregate(ONE.toString());
 
   // Many-to-many join table
-  loadOrCreateAccountDraw(account, draw);
+  loadOrCreateAccountDraw(account, draw, payout);
 
   // Increment
   draw.totalClaimed = draw.totalClaimed.plus(payout);
