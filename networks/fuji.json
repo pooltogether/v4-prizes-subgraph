@@ -1,0 +1,7 @@
+{
+  "network": "fuji",
+  "PrizeDistributor": {
+    "address": "0x9a7D5c4c631B42ea2A5a4a8efce5961f9EB7c277",
+    "startBlock": "3620800"
+  }
+}

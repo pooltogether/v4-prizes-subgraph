@@ -1,0 +1,7 @@
+{
+  "network": "mumbai",
+  "PrizeDistributor": {
+    "address": "0x334becc39a6f5c79F78566134828974f015B7177",
+    "startBlock": "22751200"
+  }
+}

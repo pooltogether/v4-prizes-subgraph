@@ -1,0 +1,7 @@
+{
+  "network": "optimism-kovan",
+  "PrizeDistributor": {
+    "address": "0x94827AF5F6E981F4C67507dCDdAB541c78655d6B",
+    "startBlock": "4614900"
+  }
+}
