@@ -22,4 +22,5 @@ type AccountDraw @entity {
   account: Account!
   draw: Draw!
   claimed: BigInt! # amount claimed by user for this single draw
+  claimedAtTimestamp: BigInt!
 }

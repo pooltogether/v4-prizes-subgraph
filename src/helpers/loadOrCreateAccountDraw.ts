@@ -3,7 +3,12 @@ import { Account, Draw, AccountDraw } from '../../generated/schema';
 
 import { generateCompositeId } from '../helpers/common';
 
-export function loadOrCreateAccountDraw(account: Account, draw: Draw, payout: BigInt): AccountDraw {
+export function loadOrCreateAccountDraw(
+  account: Account,
+  draw: Draw,
+  payout: BigInt,
+  timestamp: BigInt,
+): AccountDraw {
   const id = generateCompositeId(account.id.toString(), draw.id);
 
   let accountDraw = AccountDraw.load(id);
@@ -13,6 +18,7 @@ export function loadOrCreateAccountDraw(account: Account, draw: Draw, payout: Bi
     accountDraw.account = account.id.toString();
     accountDraw.claimed = payout;
     accountDraw.draw = draw.id.toString();
+    accountDraw.claimedAtTimestamp = timestamp;
   }
 
   // Just save
