@@ -11,7 +11,8 @@ export function handleClaimedDraw(event: ClaimedDraw): void {
   const drawId = event.params.drawId;
   const payout = event.params.payout;
 
-  const draw = loadOrCreateDraw(drawId.toString());
+  const timestamp = event.block.timestamp;
+  const draw = loadOrCreateDraw(drawId.toString(), timestamp);
   const account = loadOrCreateAccount(user.toHexString());
   const aggregate = loadOrCreateAggregate(ONE.toString());
 

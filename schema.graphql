@@ -12,6 +12,7 @@ type Account @entity {
 
 type Draw @entity {
   id: String! # drawId
+  createdAtTimestamp: BigInt!
   totalClaimed: BigInt! # sum of amount claimed for this draw
   accounts: [AccountDraw!]! @derivedFrom(field: "draw")
 }
