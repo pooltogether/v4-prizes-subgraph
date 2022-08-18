@@ -1,0 +1,7 @@
+{
+  "network": "optimism-goerli",
+  "PrizeDistributor": {
+    "address": "0x2B3E6b5c9a6Bdb0e595896C9093fce013490abbD",
+    "startBlock": "463154"
+  }
+}
