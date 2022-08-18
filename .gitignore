@@ -5,7 +5,7 @@ build
 
 subgraph.yaml
 
-subgraph.rinkeby.yaml
+subgraph.goerli.yaml
 subgraph.mainnet.yaml
 
 networks/local.json

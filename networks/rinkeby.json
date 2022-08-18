@@ -1,7 +1,0 @@
-{
-  "network": "rinkeby",
-  "PrizeDistributor": {
-    "address": "0x8F96FeEF333a29664AB5812190294618F555FD3c",
-    "startBlock": "9826400"
-  }
-}
