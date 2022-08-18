@@ -27,6 +27,7 @@ yarn prepare:avalanche
 Testnet:
 ```
 yarn prepare:goerli
+yarn prepare:optimism-goerli
 ```
 
 ### Schemas
@@ -44,6 +45,7 @@ yarn gen:avalanche
 Testnet:
 ```
 yarn gen:goerli
+yarn gen:optimism-goerli
 ```
 
 ### Tests
@@ -67,6 +69,7 @@ yarn deploy:avalanche
 Testnet:
 ```
 yarn deploy:goerli
+yarn deploy:optimism-goerli
 ```
 
 ### Build and deploy
@@ -84,6 +87,7 @@ yarn all-avalanche
 Testnet:
 ```
 yarn all-goerli
+yarn all-optimism-goerli
 ```
 
 ### Hosted Subgraphs
@@ -98,4 +102,5 @@ Mainnet:
 
 Testnet:
 - https://thegraph.com/hosted-service/subgraph/pooltogether/goerli-v4-prizes-claimed
+- https://thegraph.com/hosted-service/subgraph/pooltogether/op-goerli-v4-prizes-claimed
 

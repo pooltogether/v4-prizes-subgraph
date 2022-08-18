@@ -5,8 +5,10 @@ build
 
 subgraph.yaml
 
-subgraph.goerli.yaml
 subgraph.mainnet.yaml
+
+subgraph.goerli.yaml
+subgraph.optimism-goerli.yaml
 
 networks/local.json
 generated
