@@ -28,6 +28,7 @@ Testnet:
 ```
 yarn prepare:goerli
 yarn prepare:optimism-goerli
+yarn prepare:arbitrum-goerli
 ```
 
 ### Schemas
@@ -46,6 +47,7 @@ Testnet:
 ```
 yarn gen:goerli
 yarn gen:optimism-goerli
+yarn gen:arbitrum-goerli
 ```
 
 ### Tests
@@ -70,6 +72,7 @@ Testnet:
 ```
 yarn deploy:goerli
 yarn deploy:optimism-goerli
+yarn deploy:arbitrum-goerli
 ```
 
 ### Build and deploy
@@ -88,6 +91,7 @@ Testnet:
 ```
 yarn all-goerli
 yarn all-optimism-goerli
+yarn all-arbitrum-goerli
 ```
 
 ### Hosted Subgraphs
@@ -103,4 +107,4 @@ Mainnet:
 Testnet:
 - https://thegraph.com/hosted-service/subgraph/pooltogether/goerli-v4-prizes-claimed
 - https://thegraph.com/hosted-service/subgraph/pooltogether/op-goerli-v4-prizes-claimed
-
+- https://thegraph.com/hosted-service/subgraph/pooltogether/arb-goerli-v4-prizes-claimed
