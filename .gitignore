@@ -13,6 +13,7 @@ subgraph.goerli.yaml
 subgraph.mumbai.yaml
 subgraph.optimism-goerli.yaml
 subgraph.fuji.yaml
+subgraph.arbitrum-goerli.yaml
 
 networks/local.json
 generated

@@ -1,0 +1,7 @@
+{
+  "network": "arbitrum-goerli",
+  "PrizeDistributor": {
+    "address": "0x02aCC9594161812E3004C174CF1735EdB10e20A4",
+    "startBlock": "115084"
+  }
+}
